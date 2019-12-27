@@ -2,137 +2,74 @@
 
 __version__ = '1.0'
 
+import kivy
 from kivy.app import App
-from kivy.graphics import Mesh, Color
-from kivy.graphics.tesselator import Tesselator, WINDING_ODD, TYPE_POLYGONS
-from kivy.uix.floatlayout import FloatLayout
+from kivy.uix.label import Label
+from kivy.uix.gridlayout import GridLayout
+from kivy.uix.textinput import TextInput
 from kivy.lang import Builder
-from kivy.logger import Logger
+import json
+import requests
 
-Builder.load_string("""
-<ShapeBuilder>:
-    BoxLayout:
-        size_hint_y: None
-        height: "48dp"
-        spacing: "2dp"
-        padding: "2dp"
-
-        ToggleButton:
-            text: "Debug"
-            id: debug
-            on_release: root.build()
-        Button:
-            text: "New shape"
-            on_release: root.push_shape()
-        Button:
-            text: "Build"
-            on_release: root.build()
-        Button:
-            text: "Reset"
-            on_release: root.reset()
-
-    BoxLayout:
-        size_hint_y: None
-        height: "48dp"
-        top: root.top
-        spacing: "2dp"
-        padding: "2dp"
-        Label:
-            id: status
-            text: "Status"
+KV = Builder.load_string ("""
+ScreenManager:
+    id: manager
+    Screen:
+        BoxLayout:
+            orientation: 'vertical'
+            GridLayout:
+                cols:1
+                Label:
+                    text: 'Write a JSON string'
+                TextInput:
+                    size_hint_y: .2
+                    id: JSON
+            GridLayout:
+                cols:1
+                Button:
+                    text: 'Patch Line'
+                    on_release: app.patch(JSON.text)
+                Button:
+                    text: 'Post Line'
+                    on_release: app.post(JSON.text)
+                Button:
+                    text: 'Put Line'
+                    on_release: app.put(JSON.text)
+                Button:
+                    text: 'Delete Line'
+                    on_release: app.delete(JSON.text)
+                Button:
+                    text: 'Get & Print Database'
+                    on_release: app.get()
 """)
 
+class MyApp(App):
 
-class ShapeBuilder(FloatLayout):
-    def __init__(self, **kwargs):
-        super(ShapeBuilder, self).__init__(**kwargs)
-        self.shapes = [
-            [100, 100, 300, 100, 300, 300, 100, 300],
-            [150, 150, 250, 150, 250, 250, 150, 250]
-        ]  # the 'hollow square' shape
-        self.shape = []
-        self.build()
+    url = 'https://jarvis-uwuyuv.firebaseio.com/.json'
 
-    def on_touch_down(self, touch):
-        if super(ShapeBuilder, self).on_touch_down(touch):
-            return True
-        Logger.info('tesselate: on_touch_down (%5.2f, %5.2f)' % touch.pos)
-        self.shape.extend(touch.pos)
-        self.build()
-        return True
+    def patch(self, JSON):
+        to_database = json.loads(JSON)
+        requests.patch(url = self.url, json = to_database)
 
-    def on_touch_move(self, touch):
-        if super(ShapeBuilder, self).on_touch_move(touch):
-            return True
-        Logger.info('tesselate: on_touch_move (%5.2f, %5.2f)' % touch.pos)
-        self.shape.extend(touch.pos)
-        self.build()
-        return True
+    def post(self, JSON):
+        to_database = json.loads(JSON)
+        requests.post(url = self.url, json = to_database)
 
-    def on_touch_up(self, touch):
-        if super(ShapeBuilder, self).on_touch_up(touch):
-            return True
-        Logger.info('tesselate: on_touch_up (%5.2f, %5.2f)' % touch.pos)
-        self.push_shape()
-        self.build()
+    def put(self, JSON):
+        to_database = json.loads(JSON)
+        requests.put(url = self.url, json = to_database)
 
-    def push_shape(self):
-        self.shapes.append(self.shape)
-        self.shape = []
+    def delete(self, JSON):
+        requests.delete(url = self.url[:-5] + JSON + ".json")
+
+    auth_key = 'RWnwRYHiAwVpBBkFicTdqXsUnnvnz8PyXcSJj7JP'
+
+    def get(self):
+        request = requests.get(self.url + '?auth=' + self.auth_key)
+        print(request.json())
 
     def build(self):
-        tess = Tesselator()
-        count = 0
-        for shape in self.shapes:
-            if len(shape) >= 3:
-                tess.add_contour(shape)
-                count += 1
-        if self.shape and len(self.shape) >= 3:
-            tess.add_contour(self.shape)
-            count += 1
-        if not count:
-            return
-        ret = tess.tesselate(WINDING_ODD, TYPE_POLYGONS)
-        Logger.info('tesselate: build: tess.tesselate returns {}'.format(ret))
-        self.canvas.after.clear()
+        return KV
 
-        debug = self.ids.debug.state == "down"
-        if debug:
-            with self.canvas.after:
-                c = 0
-                for vertices, indices in tess.meshes:
-                    Color(c, 1, 1, mode="hsv")
-                    c += 0.3
-                    indices = [0]
-                    for i in range(1, len(vertices) // 4):
-                        if i > 0:
-                            indices.append(i)
-                        indices.append(i)
-                        indices.append(0)
-                        indices.append(i)
-                    indices.pop(-1)
-                    Mesh(vertices=vertices, indices=indices, mode="lines")
-        else:
-            with self.canvas.after:
-                Color(1, 1, 1, 1)
-                for vertices, indices in tess.meshes:
-                    Mesh(vertices=vertices, indices=indices,
-                         mode="triangle_fan")
-
-        self.ids.status.text = "Shapes: {} - Vertex: {} - Elements: {}".format(
-            count, tess.vertex_count, tess.element_count)
-
-    def reset(self):
-        self.shapes = []
-        self.shape = []
-        self.ids.status.text = "Shapes: {} - Vertex: {} - Elements: {}".format(
-            0, 0, 0)
-        self.canvas.after.clear()
-
-
-class TessApp(App):
-    def build(self):
-        return ShapeBuilder()
-
-
-TessApp().run()
+if __name__ == '__main__':
+    MyApp().run()
