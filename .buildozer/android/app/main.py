@@ -19,9 +19,9 @@ class MyGrid(Widget):
 
     def get(self):
         request = requests.get(self.url + '?auth=' + self.auth_key)
-        #json_data = request.json()
-        #data = json_data['temp']
-        self.data.text = str("baf")
+        json_data = request.json()
+        data = json_data['temp']
+        self.data.text = str(data)
 
     def clear(self):
         self.data.text = "cleared"
