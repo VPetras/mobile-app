@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-__version__ = "1.0"
+__version__ = "1.1"
 import kivy
 from kivy.app import App
 from kivy.uix.label import Label
