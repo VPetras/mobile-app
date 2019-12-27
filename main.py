@@ -21,7 +21,6 @@ class MyGrid(Widget):
         json_data = request.json()
         data = json_data['temp']
         self.data.text = str(data)
-        print(data)
 
     def clear(self):
         self.data.text = "cleared"
