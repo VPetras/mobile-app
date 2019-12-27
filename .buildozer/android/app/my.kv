@@ -1,0 +1,24 @@
+<MyGrid>
+
+    data: data
+
+    GridLayout:
+        cols: 1
+        size: root.width - 200, root.height - 200
+        pos: 100, 100
+
+        Button: 
+            text: "get"
+            on_press: root.get()
+        
+        Button: 
+            text: "clear data"
+            on_press: root.clear()
+        
+        GridLayout:
+            cols: 2
+            Label:
+                text: "temp:"
+            Label:
+                id: data
+                text: "Nothing"
