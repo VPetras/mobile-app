@@ -423,18 +423,18 @@ $config_headers
 
 Report bugs to <https://bugs.python.org/>."
 
-ac_cs_config="'--host=arm-linux-androideabi' '--build=x86_64-pc-linux-gnu' '--enable-shared' '--enable-ipv6' 'ac_cv_file__dev_ptmx=yes' 'ac_cv_file__dev_ptc=no' '--without-ensurepip' 'ac_cv_little_endian_double=yes' '--prefix=/usr/local' '--exec-prefix=/usr/local' '--with-openssl=/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1' 'build_alias=x86_64-pc-linux-gnu' 'host_alias=arm-linux-androideabi' 'CC=/home/petras/.buildozer/android/platform/android-ndk-r19b/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi21-clang' 'CFLAGS=-fPIC -DANDROID -D__ANDROID_API__=21' 'LDFLAGS= -L/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/sqlite3/armeabi-v7a__ndk_target_21/sqlite3/obj/local/armeabi-v7a -L/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_target_21/libffi/.libs -L/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1 -L/home/petras/.buildozer/android/platform/android-ndk-r19b/platforms/android-21/arch-arm/usr/lib' 'LIBS= -lsqlite3 -lffi -lcrypto1.1 -lssl1.1 -lz' 'CPPFLAGS= -I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/sqlite3/armeabi-v7a__ndk_target_21/sqlite3 -I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_target_21/libffi/include -I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include -I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include/internal -I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include/openssl -I/home/petras/.buildozer/android/platform/android-ndk-r19b/sysroot/usr/include' 'PKG_CONFIG_PATH=/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_target_21/libffi'"
+ac_cs_config="'--host=arm-linux-androideabi' '--build=x86_64-pc-linux-gnu' '--enable-shared' '--enable-ipv6' 'ac_cv_file__dev_ptmx=yes' 'ac_cv_file__dev_ptc=no' '--without-ensurepip' 'ac_cv_little_endian_double=yes' '--prefix=/usr/local' '--exec-prefix=/usr/local' '--with-openssl=/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1' 'build_alias=x86_64-pc-linux-gnu' 'host_alias=arm-linux-androideabi' 'CC=/home/petras/.buildozer/android/platform/android-ndk-r19b/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi21-clang' 'CFLAGS=-fPIC -DANDROID -D__ANDROID_API__=21' 'LDFLAGS= -L/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/sqlite3/armeabi-v7a__ndk_target_21/sqlite3/obj/local/armeabi-v7a -L/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_target_21/libffi/.libs -L/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1 -L/home/petras/.buildozer/android/platform/android-ndk-r19b/platforms/android-21/arch-arm/usr/lib' 'LIBS= -lsqlite3 -lffi -lcrypto1.1 -lssl1.1 -lz' 'CPPFLAGS= -I/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/sqlite3/armeabi-v7a__ndk_target_21/sqlite3 -I/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_target_21/libffi/include -I/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include -I/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include/internal -I/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include/openssl -I/home/petras/.buildozer/android/platform/android-ndk-r19b/sysroot/usr/include' 'PKG_CONFIG_PATH=/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_target_21/libffi'"
 ac_cs_version="\
 python config.status 3.7
-configured by /home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/python3-libffi-openssl-sqlite3/armeabi-v7a__ndk_target_21/python3/configure, generated by GNU Autoconf 2.69,
+configured by /home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/python3-libffi-openssl-sqlite3/armeabi-v7a__ndk_target_21/python3/configure, generated by GNU Autoconf 2.69,
   with options \"$ac_cs_config\"
 
 Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/python3-libffi-openssl-sqlite3/armeabi-v7a__ndk_target_21/python3/android-build'
-srcdir='/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/python3-libffi-openssl-sqlite3/armeabi-v7a__ndk_target_21/python3'
+ac_pwd='/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/python3-libffi-openssl-sqlite3/armeabi-v7a__ndk_target_21/python3/android-build'
+srcdir='/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/python3-libffi-openssl-sqlite3/armeabi-v7a__ndk_target_21/python3'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/usr/bin/mkdir -p'
 test -n "$AWK" || AWK=awk
@@ -514,7 +514,7 @@ if $ac_cs_silent; then
 fi
 
 if $ac_cs_recheck; then
-  set X /bin/bash '/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/python3-libffi-openssl-sqlite3/armeabi-v7a__ndk_target_21/python3/configure'  '--host=arm-linux-androideabi' '--build=x86_64-pc-linux-gnu' '--enable-shared' '--enable-ipv6' 'ac_cv_file__dev_ptmx=yes' 'ac_cv_file__dev_ptc=no' '--without-ensurepip' 'ac_cv_little_endian_double=yes' '--prefix=/usr/local' '--exec-prefix=/usr/local' '--with-openssl=/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1' 'build_alias=x86_64-pc-linux-gnu' 'host_alias=arm-linux-androideabi' 'CC=/home/petras/.buildozer/android/platform/android-ndk-r19b/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi21-clang' 'CFLAGS=-fPIC -DANDROID -D__ANDROID_API__=21' 'LDFLAGS= -L/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/sqlite3/armeabi-v7a__ndk_target_21/sqlite3/obj/local/armeabi-v7a -L/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_target_21/libffi/.libs -L/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1 -L/home/petras/.buildozer/android/platform/android-ndk-r19b/platforms/android-21/arch-arm/usr/lib' 'LIBS= -lsqlite3 -lffi -lcrypto1.1 -lssl1.1 -lz' 'CPPFLAGS= -I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/sqlite3/armeabi-v7a__ndk_target_21/sqlite3 -I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_target_21/libffi/include -I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include -I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include/internal -I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include/openssl -I/home/petras/.buildozer/android/platform/android-ndk-r19b/sysroot/usr/include' 'PKG_CONFIG_PATH=/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_target_21/libffi' $ac_configure_extra_args --no-create --no-recursion
+  set X /bin/bash '/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/python3-libffi-openssl-sqlite3/armeabi-v7a__ndk_target_21/python3/configure'  '--host=arm-linux-androideabi' '--build=x86_64-pc-linux-gnu' '--enable-shared' '--enable-ipv6' 'ac_cv_file__dev_ptmx=yes' 'ac_cv_file__dev_ptc=no' '--without-ensurepip' 'ac_cv_little_endian_double=yes' '--prefix=/usr/local' '--exec-prefix=/usr/local' '--with-openssl=/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1' 'build_alias=x86_64-pc-linux-gnu' 'host_alias=arm-linux-androideabi' 'CC=/home/petras/.buildozer/android/platform/android-ndk-r19b/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi21-clang' 'CFLAGS=-fPIC -DANDROID -D__ANDROID_API__=21' 'LDFLAGS= -L/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/sqlite3/armeabi-v7a__ndk_target_21/sqlite3/obj/local/armeabi-v7a -L/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_target_21/libffi/.libs -L/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1 -L/home/petras/.buildozer/android/platform/android-ndk-r19b/platforms/android-21/arch-arm/usr/lib' 'LIBS= -lsqlite3 -lffi -lcrypto1.1 -lssl1.1 -lz' 'CPPFLAGS= -I/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/sqlite3/armeabi-v7a__ndk_target_21/sqlite3 -I/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_target_21/libffi/include -I/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include -I/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include/internal -I/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include/openssl -I/home/petras/.buildozer/android/platform/android-ndk-r19b/sysroot/usr/include' 'PKG_CONFIG_PATH=/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_target_21/libffi' $ac_configure_extra_args --no-create --no-recursion
   shift
   $as_echo "running CONFIG_SHELL=/bin/bash $*" >&6
   CONFIG_SHELL='/bin/bash'
@@ -610,11 +610,11 @@ fi
 echo 'BEGIN {' >"$ac_tmp/subs1.awk" &&
 cat >>"$ac_tmp/subs1.awk" <<\_ACAWK &&
 S["LTLIBOBJS"]=""
-S["OPENSSL_LDFLAGS"]="-L/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/"\
-"openssl1.1/lib"
+S["OPENSSL_LDFLAGS"]="-L/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_targe"\
+"t_21/openssl1.1/lib"
 S["OPENSSL_LIBS"]="-lssl -lcrypto"
-S["OPENSSL_INCLUDES"]="-I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/"\
-"openssl1.1/include"
+S["OPENSSL_INCLUDES"]="-I/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_targe"\
+"t_21/openssl1.1/include"
 S["ENSUREPIP"]="no"
 S["SRCDIRS"]="Parser Objects Python Modules Programs"
 S["THREADHEADERS"]=" $(srcdir)/Python/thread_nt.h $(srcdir)/Python/thread_pthread.h"
@@ -641,11 +641,11 @@ S["DTRACE"]=""
 S["LDLAST"]=""
 S["TCLTK_LIBS"]=""
 S["TCLTK_INCLUDES"]=""
-S["LIBFFI_INCLUDEDIR"]="/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_target_21/lib"\
-"ffi/include"
+S["LIBFFI_INCLUDEDIR"]="/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_target_2"\
+"1/libffi/include"
 S["PKG_CONFIG_LIBDIR"]=""
-S["PKG_CONFIG_PATH"]="/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_target_21/lib"\
-"ffi"
+S["PKG_CONFIG_PATH"]="/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_target_2"\
+"1/libffi"
 S["PKG_CONFIG"]="/usr/bin/pkg-config"
 S["SHLIBS"]="$(LIBS)"
 S["CFLAGSFORSHARED"]="$(CCSHARED)"
@@ -712,18 +712,18 @@ S["CPP"]="/home/petras/.buildozer/android/platform/android-ndk-r19b/toolchains/l
 S["OBJEXT"]="o"
 S["EXEEXT"]=""
 S["ac_ct_CC"]=""
-S["CPPFLAGS"]=" -I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/sqlite3/armeabi-v7a__ndk_target_21"\
-"/sqlite3 -I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_ta"\
-"rget_21/libffi/include -I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/arme"\
-"abi-v7a__ndk_target_21/openssl1.1/include -I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_"\
-"builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include/internal -I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/bu"\
-"ild-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include/openssl -I/home/petras/.buildozer/android/platform/android-"\
-"ndk-r19b/sysroot/usr/include"
-S["LDFLAGS"]=" -L/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/sqlite3/armeabi-v7a__ndk_target_21"\
-"/sqlite3/obj/local/armeabi-v7a -L/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libf"\
-"fi/armeabi-v7a__ndk_target_21/libffi/.libs -L/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other"\
-"_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1 -L/home/petras/.buildozer/android/platform/android-ndk-r19b/platforms/android-21/arch-arm/usr/"\
-"lib -march=armv7-a -Wl,--fix-cortex-a8"
+S["CPPFLAGS"]=" -I/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/sqlite3/armeabi-v7a__ndk_targ"\
+"et_21/sqlite3 -I/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v"\
+"7a__ndk_target_21/libffi/include -I/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_buil"\
+"ds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include -I/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-arme"\
+"abi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include/internal -I/home/petras/Documents/python/kivy/mobile-test-app/.buil"\
+"dozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include/openssl -I/home/petras/.buildozer/"\
+"android/platform/android-ndk-r19b/sysroot/usr/include"
+S["LDFLAGS"]=" -L/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/sqlite3/armeabi-v7a__ndk_targ"\
+"et_21/sqlite3/obj/local/armeabi-v7a -L/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_b"\
+"uilds/libffi/armeabi-v7a__ndk_target_21/libffi/.libs -L/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-"\
+"v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1 -L/home/petras/.buildozer/android/platform/android-ndk-r19b/platforms/android-2"\
+"1/arch-arm/usr/lib -march=armv7-a -Wl,--fix-cortex-a8"
 S["CFLAGS"]="-fPIC -DANDROID -D__ANDROID_API__=21"
 S["CC"]="/home/petras/.buildozer/android/platform/android-ndk-r19b/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi21-clang"
 S["EXPORT_MACOSX_DEPLOYMENT_TARGET"]="#"
@@ -747,21 +747,21 @@ S["ARCH_RUN_32BIT"]=""
 S["UNIVERSALSDK"]=""
 S["CONFIG_ARGS"]=" '--host=arm-linux-androideabi' '--build=x86_64-pc-linux-gnu' '--enable-shared' '--enable-ipv6' 'ac_cv_file__dev_ptmx=yes' 'ac_cv_file__dev_ptc=no' "\
 "'--without-ensurepip' 'ac_cv_little_endian_double=yes' '--prefix=/usr/local' '--exec-prefix=/usr/local' '--with-openssl=/home/petras/Documents/pytho"\
-"n/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1' 'build_alias=x86_6"\
-"4-pc-linux-gnu' 'host_alias=arm-linux-androideabi' 'CC=/home/petras/.buildozer/android/platform/android-ndk-r19b/toolchains/llvm/prebuilt/linux-x86_"\
-"64/bin/armv7a-linux-androideabi21-clang' 'CFLAGS=-fPIC -DANDROID -D__ANDROID_API__=21' 'LDFLAGS= -L/home/petras/Documents/python/mobile-test-app/.bu"\
-"ildozer/android/platform/build-armeabi-v7a/build/other_builds/sqlite3/armeabi-v7a__ndk_target_21/sqlite3/obj/local/armeabi-v7a -L/home/petras/Docume"\
-"nts/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_target_21/libffi/.libs -L/home/p"\
-"etras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1."\
-"1 -L/home/petras/.buildozer/android/platform/android-ndk-r19b/platforms/android-21/arch-arm/usr/lib' 'LIBS= -lsqlite3 -lffi -lcrypto1.1 -lssl1.1 -lz"\
-"' 'CPPFLAGS= -I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/sqlite3/armeabi-v7a__n"\
-"dk_target_21/sqlite3 -I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi"\
-"-v7a__ndk_target_21/libffi/include -I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/"\
-"openssl/armeabi-v7a__ndk_target_21/openssl1.1/include -I/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/"\
-"build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include/internal -I/home/petras/Documents/python/mobile-test-app/.buildozer/android"\
-"/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include/openssl -I/home/petras/.buildozer/android/platf"\
-"orm/android-ndk-r19b/sysroot/usr/include' 'PKG_CONFIG_PATH=/home/petras/Documents/python/mobile-test-app/.buildozer/android/platform/build-armeabi-v"\
-"7a/build/other_builds/libffi/armeabi-v7a__ndk_target_21/libffi'"
+"n/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1' 'build_alias="\
+"x86_64-pc-linux-gnu' 'host_alias=arm-linux-androideabi' 'CC=/home/petras/.buildozer/android/platform/android-ndk-r19b/toolchains/llvm/prebuilt/linux"\
+"-x86_64/bin/armv7a-linux-androideabi21-clang' 'CFLAGS=-fPIC -DANDROID -D__ANDROID_API__=21' 'LDFLAGS= -L/home/petras/Documents/python/kivy/mobile-te"\
+"st-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/sqlite3/armeabi-v7a__ndk_target_21/sqlite3/obj/local/armeabi-v7a -L/home/pet"\
+"ras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_target_21/libffi/"\
+".libs -L/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk"\
+"_target_21/openssl1.1 -L/home/petras/.buildozer/android/platform/android-ndk-r19b/platforms/android-21/arch-arm/usr/lib' 'LIBS= -lsqlite3 -lffi -lcr"\
+"ypto1.1 -lssl1.1 -lz' 'CPPFLAGS= -I/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_buil"\
+"ds/sqlite3/armeabi-v7a__ndk_target_21/sqlite3 -I/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/bui"\
+"ld/other_builds/libffi/armeabi-v7a__ndk_target_21/libffi/include -I/home/petras/Documents/python/kivy/mobile-test-app/.buildozer/android/platform/bu"\
+"ild-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include -I/home/petras/Documents/python/kivy/mobile-test-app/.build"\
+"ozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include/internal -I/home/petras/Documents/p"\
+"ython/kivy/mobile-test-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1/include/op"\
+"enssl -I/home/petras/.buildozer/android/platform/android-ndk-r19b/sysroot/usr/include' 'PKG_CONFIG_PATH=/home/petras/Documents/python/kivy/mobile-te"\
+"st-app/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/libffi/armeabi-v7a__ndk_target_21/libffi'"
 S["SOVERSION"]="1.0"
 S["VERSION"]="3.7"
 S["PYTHON_FOR_BUILD"]="_PYTHON_PROJECT_BASE=$(abs_builddir) _PYTHON_HOST_PLATFORM=$(_PYTHON_HOST_PLATFORM) PYTHONPATH=$(shell test -f pybuilddir.txt && echo $(abs_builddir"\
