@@ -70,7 +70,7 @@ class MyGrid(Widget):
         self.hum_graph.ymin=-30
         self.hum_graph.ymax=30
         self.hum_graph.xlabel='Time'
-        self.hum_graph.ylabel='Temperature'
+        self.hum_graph.ylabel='Humidity'
 
     def draw_co2_graph(self):
         for plot in self.co2_graph.plots:
