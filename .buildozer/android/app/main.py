@@ -32,6 +32,8 @@ class MyGrid(Widget):
         self.co2.text = str(data['CO2'])
         self.illu.text = str(data['illuminance'])
         self.draw_temp_graph()
+        self.draw_hum_graph()
+        self.draw_co2_graph()
         
 
     def clear(self):
@@ -52,14 +54,38 @@ class MyGrid(Widget):
         self.temp_graph.xmax=10
         self.temp_graph.ymin=-30
         self.temp_graph.ymax=30
-        self.temp_graph.xlabel='X axis'
-        self.temp_graph.ylabel='Y axis'
+        self.temp_graph.xlabel='Time'
+        self.temp_graph.ylabel='Temperature'
 
-    def draw_hum_graph():
-        pass
+    def draw_hum_graph(self):
+        for plot in self.hum_graph.plots:
+            self.hum_graph.remove_plot(plot)
+        plot = MeshLinePlot(mode='line_strip', color=[1, 0, 0, 1])
+        plot.points = [(x, self.hodnoty[x]) for x in range(-0, len(self.hodnoty))]
+        self.hum_graph.add_plot(plot)
+        self.hum_graph.x_ticks_major=1
+        self.hum_graph.y_ticks_major=1
+        self.hum_graph.xmin=-0
+        self.hum_graph.xmax=10
+        self.hum_graph.ymin=-30
+        self.hum_graph.ymax=30
+        self.hum_graph.xlabel='Time'
+        self.hum_graph.ylabel='Temperature'
 
-    def draw_co2_graph():
-        pass
+    def draw_co2_graph(self):
+        for plot in self.co2_graph.plots:
+            self.co2_graph.remove_plot(plot)
+        plot = MeshLinePlot(mode='line_strip', color=[1, 0, 0, 1])
+        plot.points = [(x, self.hodnoty[x]) for x in range(-0, len(self.hodnoty))]
+        self.co2_graph.add_plot(plot)
+        self.co2_graph.x_ticks_major=1
+        self.co2_graph.y_ticks_major=1
+        self.co2_graph.xmin=-0
+        self.co2_graph.xmax=10
+        self.co2_graph.ymin=-30
+        self.co2_graph.ymax=30
+        self.co2_graph.xlabel='Time'
+        self.co2_graph.ylabel='CO2'
 
 class MyApp(App):
     def build(self):

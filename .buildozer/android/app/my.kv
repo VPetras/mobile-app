@@ -1,6 +1,8 @@
 <MyGrid>
 
     temp_graph: temp_graph
+    hum_graph: hum_graph
+    co2_graph: co2_graph
     temp: temp
     hum: hum
     co2: co2
@@ -10,14 +12,6 @@
         cols: 1
         size: root.width - 200, root.height - 200
         pos: 100, 100
-
-        Button: 
-            text: "get"
-            on_press: root.get()
-        
-        Button: 
-            text: "clear data"
-            on_press: root.clear()
         
         GridLayout:
             cols: 2
@@ -49,6 +43,24 @@
             cols: 1
             Graph:
                 id: temp_graph
+                pos: 10, 200
+                size: 2820, 1800
+                x_grid_label: True
+                y_grid_label: True
+                x_grid: True
+                y_grid: True
+
+            Graph:
+                id: hum_graph
+                pos: 10, 200
+                size: 2820, 1800
+                x_grid_label: True
+                y_grid_label: True
+                x_grid: True
+                y_grid: True
+
+            Graph:
+                id: co2_graph
                 pos: 10, 200
                 size: 2820, 1800
                 x_grid_label: True
