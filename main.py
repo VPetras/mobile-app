@@ -60,7 +60,7 @@ class MyGrid(Widget):
     def draw_hum_graph(self):
         for plot in self.hum_graph.plots:
             self.hum_graph.remove_plot(plot)
-        plot = MeshLinePlot(mode='line_strip', color=[1, 0, 0, 1])
+        plot = MeshLinePlot(mode='line_strip', color=[0, 1, 0, 1])
         plot.points = [(x, self.hodnoty[x]) for x in range(-0, len(self.hodnoty))]
         self.hum_graph.add_plot(plot)
         self.hum_graph.x_ticks_major=1
@@ -75,7 +75,7 @@ class MyGrid(Widget):
     def draw_co2_graph(self):
         for plot in self.co2_graph.plots:
             self.co2_graph.remove_plot(plot)
-        plot = MeshLinePlot(mode='line_strip', color=[1, 0, 0, 1])
+        plot = MeshLinePlot(mode='line_strip', color=[0, 0, 1, 1])
         plot.points = [(x, self.hodnoty[x]) for x in range(-0, len(self.hodnoty))]
         self.co2_graph.add_plot(plot)
         self.co2_graph.x_ticks_major=1
