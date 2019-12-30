@@ -1,6 +1,10 @@
 <MyGrid>
 
-    data: data
+    temp_graph: temp_graph
+    temp: temp
+    hum: hum
+    co2: co2
+    illu: illu
 
     GridLayout:
         cols: 1
@@ -18,7 +22,36 @@
         GridLayout:
             cols: 2
             Label:
-                text: "temp:"
+                text: "temperature:"
             Label:
-                id: data
-                text: "Nothing"
+                id: temp
+                text: "NAN"
+
+            Label:
+                text: "humidity:"
+            Label:
+                id: hum
+                text: "NAN"
+
+            Label:
+                text: "concentration CO2:"
+            Label:
+                id: co2
+                text: "NAN"
+
+            Label:
+                text: "illuminance:"
+            Label:
+                id: illu
+                text: "NAN"
+        
+        GridLayout:
+            cols: 1
+            Graph:
+                id: temp_graph
+                pos: 10, 200
+                size: 2820, 1800
+                x_grid_label: True
+                y_grid_label: True
+                x_grid: True
+                y_grid: True

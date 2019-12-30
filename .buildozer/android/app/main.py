@@ -9,26 +9,57 @@ from kivy.uix.widget import Widget
 from kivy.properties import ObjectProperty
 from kivy.lang import Builder
 from kivy.clock import Clock
+from kivy.graphics import *
+import numpy as np
+from kivy.garden.graph import Graph, MeshLinePlot
 from multiprocessing import Process
 import time
 import json
 import requests
 
 class MyGrid(Widget):
-
-    data = ObjectProperty(None)
-
     url = 'https://jarvis-uwuyuv.firebaseio.com/.json'
     auth_key = 'RWnwRYHiAwVpBBkFicTdqXsUnnvnz8PyXcSJj7JP'
+
+    hodnoty = [21,22.5,23.22,24,23,20,18,25,24]
 
     def get(self, *args):
         request = requests.get(self.url + '?auth=' + self.auth_key)
         json_data = request.json()
-        data = json_data['temp']
-        self.data.text = str(data)
+        data = json_data['sensors']
+        self.temp.text = str(data['temperature'])
+        self.hum.text = str(data['humidity'])
+        self.co2.text = str(data['CO2'])
+        self.illu.text = str(data['illuminance'])
+        self.draw_temp_graph()
+        
 
     def clear(self):
-        self.data.text = "cleared"
+        self.temp.text = "NAN"
+        self.hum.text = "NAN"
+        self.co2.text = "NAN"
+        self.illu.text = "NAN"
+
+    def draw_temp_graph(self):
+        for plot in self.temp_graph.plots:
+            self.temp_graph.remove_plot(plot)
+        plot = MeshLinePlot(mode='line_strip', color=[1, 0, 0, 1])
+        plot.points = [(x, self.hodnoty[x]) for x in range(-0, len(self.hodnoty))]
+        self.temp_graph.add_plot(plot)
+        self.temp_graph.x_ticks_major=1
+        self.temp_graph.y_ticks_major=1
+        self.temp_graph.xmin=-0
+        self.temp_graph.xmax=10
+        self.temp_graph.ymin=-30
+        self.temp_graph.ymax=30
+        self.temp_graph.xlabel='X axis'
+        self.temp_graph.ylabel='Y axis'
+
+    def draw_hum_graph():
+        pass
+
+    def draw_co2_graph():
+        pass
 
 class MyApp(App):
     def build(self):

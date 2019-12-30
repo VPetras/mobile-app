@@ -1,0 +1,4 @@
+[submodule "sdk"]
+	path = mobile-test-app/.buildozer
+	url = https://github.com/VPetras/mobile-test-app
+	branch = master
