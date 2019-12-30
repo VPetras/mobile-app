@@ -8,16 +8,20 @@ from kivy.uix.textinput import TextInput
 from kivy.uix.widget import Widget
 from kivy.properties import ObjectProperty
 from kivy.lang import Builder
+from kivy.clock import Clock
+from multiprocessing import Process
+import time
 import json
 import requests
 
 class MyGrid(Widget):
+
     data = ObjectProperty(None)
 
     url = 'https://jarvis-uwuyuv.firebaseio.com/.json'
     auth_key = 'RWnwRYHiAwVpBBkFicTdqXsUnnvnz8PyXcSJj7JP'
 
-    def get(self):
+    def get(self, *args):
         request = requests.get(self.url + '?auth=' + self.auth_key)
         json_data = request.json()
         data = json_data['temp']
@@ -28,7 +32,9 @@ class MyGrid(Widget):
 
 class MyApp(App):
     def build(self):
-        return MyGrid()
+        grid = MyGrid()
+        Clock.schedule_interval(grid.get, 1)
+        return grid
 
 if __name__ == '__main__':
     MyApp().run()
